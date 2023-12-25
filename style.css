@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "heebo";
+    /* overflow: hidden; */
+}
+html,body{
+    width: 100%;
+/*    height: 100%;*/
+    background-color: white;
+}
+
+.container{
+    width: 80%;
+    height: 77vh;
+    margin: auto;
+    overflow: hidden;
+}
+.container .navbar{
+    width: 100%;
+    height: 50px;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.navbar .logo h2{
+ font-family: "Poppins";   
+ font-size: 1.4rem;
+
+}
+span{
+    color: rgb(0, 0, 251);
+    font-size: 1.4rem;
+    font-family: "poppins";
+}
+.surya{
+    display: flex;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+.navbar nav a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 10px;
+    color: black;
+    transition: 0.1s ease-in;
+}
+nav a:hover{
+    cursor: pointer;
+    color: crimson;
+}
+.btn{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+.btn img{
+    width: 18px;
+}
+.btn button{
+    padding: 4px 14px;
+    border: none;
+    background-color: rgb(243, 19, 19);
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: rgb(190, 0, 0);
+}
+
+.icons{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons img{
+    width: 20px;
+    display: none;
+}
+.items{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to right, rgb(44, 43, 43), rgb(42, 32, 32)), url(./img/pngegg.png) no-repeat center center;
+    background-blend-mode: lighten;
+    position: relative;
+}
+.items::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contents{
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px; 
+}
+.contents a{
+    text-decoration: none;
+    color: white;
+    font-family: tahoma;
+    font-size: 10px;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0);
+    padding: 4px 6px;
+    border: none;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.contents h1{
+    font-family: tahoma;
+    font-size: 2.3rem;
+    color: white;
+    line-height: 60px;
+    text-shadow: 0 0 2px 3px black;
+}
+.contents p{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 10px 0;
+    margin: 0 80px;
+    
+}
+.contents button{
+    background-color: rgb(255, 4, 4);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 26px;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 16px;
+    transition: 0.1s ease-out;
+    border: none;
+}
+.contents button:hover{
+    cursor: pointer;
+    background-color: rgb(228, 11, 11);
+    border: none;
+}
+
+/*Container 2 styling*/
+
+
+.container2{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    background-color: white;
+}
+.container-item{
+    width: 80%;
+    height: 60vh;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+.container2 .leftside{
+    width: 45%;    
+    height: 60vh;
+    background: url(./img/2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top;
+
+}
+.container2 .rightside{
+     width: 45%;    
+    height: 60vh;
+    background:  linear-gradient(to right, rgb(29, 29, 139), rgb(19, 31, 19));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container2 h2{
+    font-family: tahoma;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 0 20px;
+    text-transform: capitalize;
+
+}
+.container2 p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 23px;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.rightside .top{
+    width: 100%;
+    height: 50%;
+    background: url(./img/pngwing.com.png) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+
+}
+.rightside .bottom{
+    width: 100%;
+    height: 50%;
+    background: url(./img/3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container3{
+    width: 80%;
+    height: 80vh;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.container3 .txt{
+    margin: 0 90px;
+    padding: 0 28px;
+}
+.txt a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.txt h2{
+    color: black;
+    font-family: tahoma;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 44px;
+    position: relative;
+}
+h2::after{
+    position: absolute;
+    left: 48%;
+    bottom: -5px;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+.txt p{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 13px 90px;
+}
+.container3 .img{
+    margin-top: 20px;
+    width: 40px;
+}
+.menus{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menus a{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+.menus a::after{
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: red;
+}
+.menus a:hover::after{
+    width: 40px;
+    color: red;
+    transition: all 0.2s linear;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.sk1, .sk2, .sk3 h3{
+    color: black;
+    font-size: 1rem;
+    padding: 4px 10px;
+}
+.sk1, .sk2, .sk3 p{
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 4px 10px;
+}
+.hero button{
+    margin-top: 10px;
+    border: none;
+    padding: 3px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.sk1{
+    margin-top: 10px;
+}
+.sk3{
+    margin-top: 20px;
+}
+.hero button:hover{
+    background-color: darkred;
+}
+
+
+.pizza1{
+    width: 30%;
+    height: 100%;
+}
+.pizza1 img{
+    width: 220px;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.pizza2{
+    position: relative;
+    bottom: 28px;
+    width: 30%;
+    height: 100%;
+}
+.pizza2 img{
+    width: 200px;
+    padding: 0 10px;
+}
+.pizza3{
+    position: relative;
+    bottom: 30px;
+    width: 30%;
+    height: 100%;
+}
+.pizza3 img{
+    width: 150px;
+}
+
+/*Media Quries*/
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+        height: 74%;
+/*        background-color: cyan;*/
+    }
+    .contents{
+        width: 100%;
+    }
+    .contents p{
+        padding: 10px 0;
+        margin: 0 12px;
+    }
+    .navbar .logo{
+        position: absolute;
+        left: 20px;
+    }
+    #Navi {
+        /* display: none; */
+    }
+    .surya{
+        width: 100%;
+        height: 50px;
+        /* background-color: yellow; */
+        backdrop-filter: blue(20px);
+        gap: 0;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        z-index: 1;
+        box-shadow: 0 0 5px black;   
+    }
+    .surya nav a{
+    color: white;
+    }
+    .icons{
+        margin-right: 20px;
+    }
+    .icons #icon{
+        display: block;
+    }
+    .icons #icon1{
+        display: none;
+    }
+    .container2{
+        width: 100%;
+    }
+    .container-item{
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        margin: 0 auto;
+    }
+    .container2 .leftside{
+        width: 50%;
+    }
+     .container2 .rightside{
+        width: 50%;
+    }
+
+    .container3{
+        width: 100%;
+    }
+    .container3 .txt{
+        margin: 0 40px;
+        padding: 0 10px;
+    }
+    .container3 .menus{
+        margin-top: 30px;
+        height: 20%;
+    }
+
+}
+
+
